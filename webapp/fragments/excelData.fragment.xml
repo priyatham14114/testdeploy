@@ -1,0 +1,104 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form"
+    xmlns="sap.m"
+>
+    <Dialog
+        id="knfjk"
+        title="Upload Data"
+        class="dialogSlideIn"
+        resizable="true"
+        draggable="true"
+        contentWidth="85%"
+        contentHeight="85%"
+    >
+         <Table
+                id="_IDGenTswfd_able1"
+                items="{localModel>/items}"
+            >
+                <headerToolbar>
+                    <OverflowToolbar id="idBoorertyksTableHeader">
+                        <Title
+                            id="Ijgbajsg23"
+                            text="Sample Data"
+                        />
+                        <ToolbarSpacer id="idTabledsweHeaderSpacer" />
+                        <Button
+                            id="idSubmitdfgfre"
+                            type="Accept"
+                            text="Submit"
+                            press="onBatchSave"
+                        />
+                        <Button
+                            id="idRefreshBtnvgfd"
+                            type="Ghost"
+                            text="Clear"
+                            press="onClear"
+                        />
+                        <Button
+                            id="idBtnEditq__"
+                            text="Edit"
+                            icon="sap-icon://edit"
+                            type="Ghost"
+                            press="onEditPressIndai"
+                        />
+                        <Button
+                            id="idBtsdvwnEditq__"
+                            text="Close"
+                            icon="sap-icon://close"
+                            type="Neutral"
+                            press="onClosePress"
+                        />
+                    </OverflowToolbar>
+                </headerToolbar>
+                <columns>
+                    <Column id="_IDGenColumn1_sfdg">
+                        <Label
+                            id="_IDGenLabel_Sdf2"
+                            text="Vehicle Number"
+                        />
+                    </Column>
+                    <Column id="_IDGenCol_Sfdmn2">
+                        <Label
+                            id="_IDGenLabsssss_el3"
+                            text="Vendor Name"
+                        />
+                    </Column>
+                    <Column id="_IDGenCosaf_lumn3">
+                        <Label
+                            id="_IDGenLabel4_Sfg"
+                            text="Driver Name"
+                        />
+                    </Column>
+                    <Column id="_IDGenColu_sfgmn4">
+                        <Label
+                            id="_IDGe_SdfnLabel5"
+                            text="Driver Mobile"
+                        />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="_IDGensfdg_ColumnListItem1">
+                        <cells>
+                            <Input
+                                id="_IDGenText1WE1"
+                                value="{localModel>Vehiclenumber}"
+                            />
+                            <Input
+                                id="_IDGenTex_Dfst2"
+                                value="{localModel>Vendorname}"
+                            />
+                            <Input
+                                id="_IDGenText3_SWfe"
+                                value="{localModel>Drivername}"
+                            />
+                            <Input
+                                id="_IDGe_wdfs"
+                                value="{localModel>Drivermobile}"
+                            />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+    </Dialog>
+</core:FragmentDefinition>
