@@ -12,6 +12,7 @@
         id="page"
         title="Read From Excel"
     >
+    <Text id="_IDGenText" text="With Destination'test'"></Text>
         <form:SimpleForm
             id="__sjfdjbsaed___"
             editable="true"

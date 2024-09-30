@@ -5,7 +5,7 @@
     {
       "source": "^/sap/(.*)$",
       "target": "/sap/$1",
-      "destination": "XL_destination",
+      "destination": "RF_APP_CAPM_Destination",
       "authenticationType": "xsuaa",
       "csrfProtection": false
     },
